@@ -1,0 +1,49 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - question
+  - inform
+  - complaint
+
+responses:
+  utter_greet:
+  - text: "Hi!"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Thank you for talking with me, Have a nice day!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_question:
+  - text: "More about our company can be found at ouw website: company.com. You can contact us via email at something@example.com or call us at 123456789"
+
+  utter_inform:
+  - text: "Thank you for sharing the information. You will be contacted soon"
+
+  utter_complaint:
+  - text: "We have recieved your complaint, please share your email address or phone number so that we may contact you."
+
+  utter_help_you:
+  - text: "Can I help you with anything ?"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
